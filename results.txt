@@ -1,0 +1,30 @@
+A. Build a markov chain of two states, 0 and 1
+Original markov chain matrix:
+
+          0         1
+0  0.795758  0.204242
+1  0.589313  0.410687 
+
+C. Calculate p^n values until convergence at: 
+      max(abs(pn1[0,0] - pn0[0,0]), 
+      abs(pn1[1,1] - pn0[1,1]))
+      
+Convergence at p ^ 3:
+
+          0         1
+0  0.742624  0.257376
+1  0.742624  0.257376 
+
+Convergent state: 0
+
+D. Run a simulation of 2000 steps, 
+      and calculate proportion of state 0 out of all steps
+      
+Proportion of state = 0 during simulation: 
+0.6265
+
+E. Run 2000 simulations of 2000 steps, 
+      count the proportion of simulations of which 0 was the last step
+      
+Proportion of simulations that ended with step 0 out of all simulations: 
+0.0005
